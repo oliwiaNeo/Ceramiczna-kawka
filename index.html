@@ -1,48 +1,22 @@
 <!doctype html>
 <html lang="pl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Ceramiczna Kawka ☕</title>
-  <style>
-    body{
-      font-family: Arial, sans-serif;
-      background:#fff;
-      color:#111;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      min-height:100vh;
-      margin:0;
-      padding:24px;
-      box-sizing:border-box;
-      text-align:center;
-    }
-    .box{max-width:520px;width:100%}
-    h1{font-size:32px;margin:0 0 14px}
-    p{font-size:18px;line-height:1.5;margin:0 0 26px}
-    a{
-      display:inline-block;
-      padding:16px 24px;
-      border-radius:12px;
-      background:#111;
-      color:#fff;
-      text-decoration:none;
-      font-weight:700;
-      font-size:18px;
-    }
-    small{display:block;margin-top:18px;color:#666;line-height:1.4}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#01687B">
+<title>Ceramiczna Kawka ☕ | Dodaj do kalendarza</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:24px;background:#fff;color:#15343a;font-family:Arial,Helvetica,sans-serif}.wrap{max-width:510px;width:100%;text-align:center}.dot{width:65px;height:65px;border-radius:50%;background:#C5EB00;margin:0 auto 20px;display:grid;place-items:center;font-size:31px}h1{font-size:clamp(29px,7vw,39px);margin:0 0 12px;color:#01687B}p{font-size:18px;line-height:1.5;margin:0 0 28px}.btn{display:block;border-radius:13px;padding:17px 16px;text-decoration:none;font-size:17px;font-weight:700;margin:12px 0;background:#01687B;color:white}.btn.secondary{background:#C5EB00;color:#123c40}.note{font-size:13px;line-height:1.5;color:#66777a;margin-top:24px}
+</style>
 </head>
 <body>
-  <main class="box">
-    <h1>Ceramiczna Kawka ☕</h1>
-    <p>Widzimy się w każdy czwartek o 9:00.<br>
-    Dodaj cykliczne wydarzenie do swojego kalendarza, żeby nie przegapić kolejnej Kawki.</p>
-
-    <a href="ceramiczna-kawka.ics">DODAJ DO KALENDARZA 📅</a>
-
-    <small>Po kliknięciu otworzy się lub pobierze plik kalendarza z wydarzeniem cyklicznym.</small>
-  </main>
+<main class="wrap">
+<div class="dot" aria-hidden="true">☕</div>
+<h1>Ceramiczna Kawka</h1>
+<p>Widzimy się w każdy czwartek o <strong>9:00</strong>! ❤️<br>Dodaj nasze cotygodniowe spotkanie do swojego kalendarza, żeby nie przegapić kolejnej Kawki.</p>
+<a class="btn" id="google" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Ceramiczna%20Kawka%20%E2%98%95&amp;dates=20261015T090000%2F20261015T100000&amp;ctz=Europe%2FWarsaw&amp;recur=RRULE%3AFREQ%3DWEEKLY%3BBYDAY%3DTH&amp;details=Ceramiczna%20Kawka%20%E2%80%94%20co%20czwartek%20o%209%3A00.%20Do%20zobaczenia%21" target="_blank" rel="noopener noreferrer">📅 Dodaj do Kalendarza Google</a>
+<a class="btn secondary" href="ceramiczna-kawka.ics" type="text/calendar">📅 Dodaj do Apple / Outlook</a>
+<div class="note">W Google może otworzyć się strona logowania lub formularz w przeglądarce. Sprawdź powtarzanie co tydzień przed zapisaniem. W Apple / Outlook może pobrać się plik kalendarza (.ics).</div>
+</main>
 </body>
 </html>
